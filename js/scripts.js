@@ -1,3 +1,7 @@
 $(document).ready(function() {
-  console.log("hello");
+  $("#formOne").submit(function(event) {
+    console.log("submitted");
+
+    event.preventDefault();
+  })
 });
